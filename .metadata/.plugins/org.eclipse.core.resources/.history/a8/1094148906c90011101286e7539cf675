@@ -1,0 +1,8 @@
+package com.klef.soa.exam.entity;
+
+public class Crud {
+	private long id;
+	private string name;
+	
+
+}

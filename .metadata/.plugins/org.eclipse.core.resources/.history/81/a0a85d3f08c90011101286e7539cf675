@@ -1,0 +1,17 @@
+package com.klef.soa.exam.configuration;
+
+public class SwaggerConfig {
+	 @Bean
+	    public OpenAPI customOpenAPI()
+	    {
+	        return new OpenAPI()
+	                .info(new Info()
+	                        .title("crud service")
+	                        .version("1.0")
+	                        .description("REST API Documentation for Hotel Microservice")
+	                        .contact(new Contact()
+	                                .name("KLUniversity")
+	                                .email("demo@example.com")));
+	    }
+
+}

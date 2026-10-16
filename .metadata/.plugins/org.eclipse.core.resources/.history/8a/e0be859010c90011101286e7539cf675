@@ -1,0 +1,22 @@
+package com.klef.soa.exam.entity;
+
+public class Crud {
+	private long id;
+	public Crud(long id, String name, String building, Integer seatingCapacity, Double entalFee) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.building = building;
+		this.seatingCapacity = seatingCapacity;
+		this.entalFee = entalFee;
+	}
+	private String name;
+	private String building;
+	private Integer seatingCapacity;
+	private Double entalFee;
+
+
+
+	
+
+}

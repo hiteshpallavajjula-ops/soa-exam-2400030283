@@ -1,0 +1,14 @@
+package com.klef.soa.exam.entity;
+
+public class Crud {
+	private long id;
+	private String name;
+	private String building;
+	private Integer seatingCapacity;
+	private Double entalFee;
+
+
+
+	
+
+}

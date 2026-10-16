@@ -1,0 +1,27 @@
+package com.klef.soa.exam.controller;
+
+public class CrudController {
+	@RestController
+	@RequestMapping("/hotel")
+	public class HotelController {
+		@Autowired
+		private HotelService service;
+		
+		@GetMapping("/")
+		public String demo() {
+			return "Hotel Demo Project";
+		}
+		@PostMapping("/add")
+		public ResponseEntity<Hotel> addHotel(@RequestBody Hotel h)
+		{
+			Hotel hotel = service.addhoHotel(h);
+			return ResponseEntity.status(201).body(hotel);
+		}
+		
+		@GetMapping("/displayall")
+		public ResponseEntity<List<Hotel>> displayAllHotel(){
+			List<Hotel> hotel = service.displayAllHotels();
+			return ResponseEntity.status(200).body(hotel);
+		}
+
+}
